@@ -1,0 +1,13 @@
+  <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+
+
+<form hx-post="/burn" hx-target="#burn-result">
+    My SLO is evaluated over 
+        <input id="slo time window in days" name="slo-window" type="number", placeholder="Days..."> days.
+    I want to be alerted when 
+        <input id="title" name="error-budget-percentage" type="number", placeholder="Percentage...">% of my error budget has been consumed in the last 
+        <input id="title" name="time-consumption" type="number", placeholder="Title.."> hours.
+    <button type="submit">Submit</button>
+</form>
+
+The burn rate threshold for your alert should be <span id="burn-result">...</span>
